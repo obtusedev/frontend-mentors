@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+/* General Styles */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-family: "Karla";
+}
+
+body {
+  display: grid;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media screen and (min-width: 375px) {
+  body {
+    grid-template-areas: "top" "middle" "bottom";
+    grid-template-columns: 1fr;
+    margin: 1rem 1rem;
+    border: 0px solid #e5eff5;
+    border-radius: 5px;
+    box-shadow: #e5eff5 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+
+  .card {
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
+  }
+  .card .card__heading {
+    font-weight: 700;
+    font-size: 1.75rem;
+  }
+  .card .card__guarantee {
+    color: #c0df34;
+    font-weight: 700;
+    margin: 1.5rem auto;
+  }
+  .card.card__top {
+    grid-area: top;
+    background-color: white;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+  }
+  .card.card__top .card__heading {
+    color: #2ab2af;
+  }
+  .card.card__top .card__info {
+    color: #98a6bd;
+    line-height: 2rem;
+    margin: 1.5rem auto;
+  }
+  .card.card__middle {
+    grid-area: middle;
+    background-color: #27a5a3;
+  }
+  .card.card__middle p {
+    color: white;
+  }
+  .card.card__middle div {
+    color: white;
+  }
+  .card.card__middle .card__info {
+    line-height: 2rem;
+    margin: 1.5rem auto;
+  }
+  .card.card__bottom {
+    grid-area: bottom;
+    background-color: #2ab2af;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+  }
+  .card.card__bottom p {
+    color: white;
+    line-height: 1.75rem;
+  }
+  .card.card__bottom div {
+    color: white;
+  }
+  .card.card__bottom .card__info {
+    margin: 1.5rem auto;
+  }
+  .card .price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  .button {
+    color: white;
+    background-color: #c0df34;
+    font-weight: 700;
+    text-align: center;
+    margin: 2rem 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+}
+/* Desktop Styles */
+@media screen and (min-width: 1440px) {
+  body {
+    margin: 3rem auto;
+    max-width: 50vw;
+    max-height: 40vh;
+    grid-template-areas: "card__top card__top" "card__middle card__bottom";
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    padding: 2rem;
+  }
+  .card .card__heading {
+    padding-top: 1rem;
+  }
+  .card .card__guarantee {
+    margin: 1rem auto;
+  }
+  .card.card__top {
+    grid-area: card__top;
+  }
+  .card.card__middle {
+    grid-area: card__middle;
+    border-bottom-left-radius: inherit;
+  }
+  .card.card__bottom {
+    grid-area: card__bottom;
+    border-bottom-left-radius: 0px;
+  }
+  .card .button {
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
