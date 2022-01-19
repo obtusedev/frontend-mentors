@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: "Lexend Deca";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 90vw;
+  border-top-left-radius: 7px;
+}
+
+.card {
+  max-width: 100%;
+  padding: 2rem 2.5rem;
+}
+
+.card img {
+  margin: 1rem 0;
+}
+
+.first-card {
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+.third-card {
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.heading {
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.button {
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  border-style: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+.bg-orange {
+  background-color: var(--bright-orange);
+}
+
+.bg-dark-cyan {
+  background-color: var(--dark-cyan);
+}
+
+.bg-very-dark-cyan {
+  background-color: var(--very-dark-cyan);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.text-orange {
+  color: var(--bright-orange);
+}
+
+.text-dark-cyan {
+  color: var(--dark-cyan);
+}
+
+.text-very-dark-cyan {
+  color: var(--very-dark-cyan);
+}
+
+p {
+  color: var(--transparent-white);
+  line-height: 1.75;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 60vw;
+    margin: 6.5rem auto;
+  }
+  .button {
+    margin-top: 2.5rem;
+  }
+  p {
+    margin-bottom: 2rem;
+  }
+  .first-card {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 0px;
+  }
+  .third-card {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 0px;
+  }
+}
